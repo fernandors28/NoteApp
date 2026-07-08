@@ -1,15 +1,14 @@
+
 import Link from "next/link"
 function Navbar() {
     return (
         <nav className="w-full h-20 bg-slate-950">
             <div className="h-15 m-2">
                 <div className="flex flex-row h-full w-full ">
-                    <Link href="/" className="flex w-40 h-full flex-row">
-                        
-                        <h1 className="py-4 text-lg">VarietyNote</h1>
-                    </Link>
+                    <h1 >VarietyNote</h1>
+
                     <div className="flex justify-end items-center w-full  px-3 ">
-                         
+
                         <div className="w-40 flex flex-row">
                             <Link id="navbar-options" href="#" >
                                 <span className="w-20">Sign In</span>
@@ -18,7 +17,7 @@ function Navbar() {
                                 <span className="w-20">Sign Up</span>
                             </Link>
                         </div>
-                       
+
                     </div>
                 </div>
             </div>
