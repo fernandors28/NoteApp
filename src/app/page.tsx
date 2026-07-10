@@ -1,5 +1,5 @@
 import { Navbar } from "../components/navbar";
-import 'bootstrap-icons/font/bootstrap-icons.css'
+import {Editor} from "@/components/feature/DynamicEditor";
 function Content() {
   const arr = [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }, { id: 5 }, { id: 6 }, { id: 7 }, { id: 8 }];
   return (
@@ -21,14 +21,26 @@ function Content() {
               {arr.map((item) => (
                 <div key={item.id} className="h-[27%] w-[85 %] mx-2 my-1 bg-white">
                     <div className="w-full h-[23%] bg-blue-950"></div>
-                    <div className="w-full h-[62%] "></div>
-                    <div className="w-full h-[15%] bg-amber-950"></div>
+                    <div className="w-full h-[60%] "></div>
+                    <div className="flex flex-row w-full h-[17%] text-black">
+                        <div className="w-1/2 h-full ">
+                            <small>modificado:<time></time></small>
+                            
+                        </div>
+                        <div className="w-1/2 h-full">
+                            <small>create:<time></time></small>
+                            
+                        </div>
+                    </div>
                 </div>
               ))}
             </div>
           </div>
-          <div className="h-full w-3/4 bg-white">
-            <div className="h-1/12 w-full bg-blue-400"></div>
+          <div className="flex flex-col h-full w-3/4 bg-white min-h-0">
+            <div className="h-1/12 w-full bg-blue-400 shrink-0"></div>
+            <div className="overflow-y-auto h-[500px] p-2">
+              <Editor />
+            </div>
           </div>
         </div>
       </div>
