@@ -38,7 +38,7 @@ function Content() {
           </div>
           <div className="flex flex-col h-full w-3/4 bg-white min-h-0">
             <div className="h-1/12 w-full bg-blue-400 shrink-0"></div>
-            <div className="overflow-y-auto h-[500px] p-2">
+            <div className="overflow-y-auto h-[460px] p-2">
               <Editor />
             </div>
           </div>
